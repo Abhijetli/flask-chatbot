@@ -1,0 +1,11 @@
+# Ignore virtual environment
+venv/
+venvv/
+__pycache__/
+*.pyc
+*.pyo
+
+# Ignore large files
+*.dll
+*.lib
+*.exe
