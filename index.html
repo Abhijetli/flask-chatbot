@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leprosy Awareness</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="bg-primary text-white text-center py-4">
+        <h1>Leprosy Awareness</h1>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#about">About Leprosy</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#treatment">Treatment Options</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#early-detection">Early Detection</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#faq">FAQs</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container my-5">
+        <section id="about" class="mb-5">
+            <h2 class="text-primary">What is Leprosy?</h2>
+            <div class="card"><div class="card-body">
+                <p>Leprosy, also known as Hansen's disease, is a chronic infectious disease caused by the bacterium <strong>Mycobacterium leprae</strong>. It primarily affects the skin, peripheral nerves, mucosal surfaces, and eyes. Early diagnosis and treatment are crucial.</p>
+            </div></div>
+        </section>
+
+        <section id="treatment" class="mb-5">
+            <h2 class="text-primary">Treatment Options</h2>
+            <div class="card"><div class="card-body">
+                <p>Leprosy is treatable with multi-drug therapy (MDT), provided free by the WHO. Regular follow-ups are essential for monitoring progress.</p>
+                <ul>
+                    <li>MDT is effective and safe.</li>
+                    <li>Supportive care and rehabilitation may be needed.</li>
+                </ul>
+            </div></div>
+        </section>
+
+        <section id="early-detection" class="mb-5">
+            <h2 class="text-primary">Early Detection</h2>
+            <div class="card"><div class="card-body">
+                <p>Early detection is crucial. Common symptoms include:</p>
+                <ul>
+                    <li>Skin lesions lighter than surrounding skin.</li>
+                    <li>Numbness in hands and feet.</li>
+                    <li>Muscle weakness.</li>
+                </ul>
+                <button onclick="window.open('https://huggingface.co/spaces/Abhiyoshi/lepdect', '_blank')">
+                    Early Detection
+                </button>
+                
+            </div></div>
+        </section>
+
+        <section id="faq" class="mb-5">
+            <h2 class="text-primary">Frequently Asked Questions</h2>
+            <div class="card"><div class="card-body">
+                <h5>1. Is leprosy contagious?</h5><p>No, it is not highly contagious.</p>
+                <h5>2. Can leprosy be cured?</h5><p>Yes, with multi-drug therapy.</p>
+                <h5>3. What should I do if I suspect I have leprosy?</h5><p>Seek medical help immediately.</p>
+            </div></div>
+        </section>
+    </main>
+
+    <!-- Chatbot -->
+    <button class="chatbot-button btn btn-primary" onclick="toggleChat()">💬 Chat</button>
+    <div id="chat-window" class="chat-window">
+        <div class="chat-header">
+            <span>Chatbot</span>
+            <button class="close-button" onclick="toggleChat()">✖</button>
+        </div>
+        <div id="chat-body" class="chat-body"></div>
+        <div class="chat-input-area">
+            <input type="text" id="user-input" class="chat-input" placeholder="Ask about leprosy...">
+            <button class="send-button" onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
